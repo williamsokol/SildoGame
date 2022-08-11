@@ -1,0 +1,8 @@
+/home/william/Documents/GodotGames/3DGame1/.mono/temp/bin/Debug/3DGame.dll
+/home/william/Documents/GodotGames/3DGame1/.mono/temp/bin/Debug/3DGame.pdb
+/home/william/Documents/GodotGames/3DGame1/.mono/temp/obj/Debug/3DGame.csproj.AssemblyReference.cache
+/home/william/Documents/GodotGames/3DGame1/.mono/temp/obj/Debug/3DGame.AssemblyInfoInputs.cache
+/home/william/Documents/GodotGames/3DGame1/.mono/temp/obj/Debug/3DGame.AssemblyInfo.cs
+/home/william/Documents/GodotGames/3DGame1/.mono/temp/obj/Debug/3DGame.csproj.CoreCompileInputs.cache
+/home/william/Documents/GodotGames/3DGame1/.mono/temp/obj/Debug/3DGame.dll
+/home/william/Documents/GodotGames/3DGame1/.mono/temp/obj/Debug/3DGame.pdb

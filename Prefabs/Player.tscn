@@ -1,0 +1,39 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scripts/Player.cs" type="Script" id=1]
+[ext_resource path="res://Arts/icon.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/PlayerAnim.cs" type="Script" id=3]
+[ext_resource path="res://Prefabs/bobby.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Arts/Camera/CameraChange.tres" type="Animation" id=5]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.5, 1, 0.5 )
+
+[sub_resource type="CubeMesh" id=2]
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_texture = ExtResource( 2 )
+uv1_scale = Vector3( 3, 2, 1 )
+
+[node name="Player" type="RigidBody"]
+transform = Transform( 0.999688, 0, 0.0249905, 0, 1, 0, -0.0249905, 0, 0.999688, 0, 7.552, 0 )
+mode = 2
+can_sleep = false
+script = ExtResource( 1 )
+speed = 7.0
+mouseSensitivity = 0.2
+CameraAnim = ExtResource( 5 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+pause_mode = 1
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CollisionShape2"]
+visible = false
+mesh = SubResource( 2 )
+skeleton = NodePath("")
+material/0 = SubResource( 5 )
+
+[node name="bobby" parent="." instance=ExtResource( 4 )]
+transform = Transform( -1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 0, -1, 0 )
+script = ExtResource( 3 )
